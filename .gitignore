@@ -3,3 +3,4 @@ env
 *.aux.xml
 scripts/*.py
 scripts/*.ipynb
+datasets/output/*
