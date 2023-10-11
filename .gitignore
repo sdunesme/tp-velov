@@ -4,3 +4,4 @@ env
 scripts/*.py
 scripts/*.ipynb
 datasets/output/*
+!datasets/output/README.md
