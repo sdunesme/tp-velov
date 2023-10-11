@@ -1,0 +1,4 @@
+geopandas
+jupyterlab
+rasterio
+shapely
