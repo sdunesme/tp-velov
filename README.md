@@ -45,15 +45,24 @@ Quelques connaissances sur le fonctionnement de shapely sont indispensables pour
 Rasterio permet d'utiliser les librairies GDAL pour ouvrir, lire et écrire des données raster de façon bien plus conviviale que la librairie GDAL elle-même. 
 
 ## Démarrage rapide
+### Avec DataCamp
+Pour un démarrage très rapide, vous pouvez utiliser un [Workspace DataCamp](https://app.datacamp.com/workspace/).
+
+Créer un compte sur DataCamp
+Accéder aux [Workspace DataCamp](https://app.datacamp.com/workspace/)
+Cliquer sur le lien en haut à droite Import from GitHub
+Donner un nom au workspace et indiquer l'URL de ce dépôt (https://github.com/sdunesme/tp-velov)
+Cliquer sur Create Workspace
+
 ### Avec conda
 ```bash
 # Installation initiale
-conda create -n tp-velov
+conda create -n tp-velov # Confirmer avec "y"+Enter
 conda activate tp-velov
-conda install --file requirements.txt
+conda install -c conda-forge rasterio geopandas jupyterlab # Confirmer avec "y"+Enter
 
 # Lancement du jupyter-lab
-conda activate 
+conda activate tp-velov
 jupyter-lab
 ```
 
@@ -62,12 +71,12 @@ jupyter-lab
 ```powershell
 # Installation initiale
 python3.exe -m venv env --prompt tp-velov
-./env/Script/activate
+./env/Scripts/activate
 pip install -U pip
 pip install -r requirements.txt
 
 # Lancement du jupyter-lab
-./env/Script/activate
+./env/Scripts/activate
 jupyter-lab
 ```
 
