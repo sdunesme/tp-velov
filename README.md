@@ -48,11 +48,11 @@ Rasterio permet d'utiliser les librairies GDAL pour ouvrir, lire et écrire des 
 ### Avec DataCamp
 Pour un démarrage très rapide, vous pouvez utiliser un [Workspace DataCamp](https://app.datacamp.com/workspace/).
 
-Créer un compte sur DataCamp
-Accéder aux [Workspace DataCamp](https://app.datacamp.com/workspace/)
-Cliquer sur le lien en haut à droite Import from GitHub
-Donner un nom au workspace et indiquer l'URL de ce dépôt (https://github.com/sdunesme/tp-velov)
-Cliquer sur Create Workspace
+- Créer un compte sur DataCamp
+- Accéder aux [Workspace DataCamp](https://app.datacamp.com/workspace/)
+- Cliquer sur le lien en haut à droite Import from GitHub
+- Donner un nom au workspace et indiquer l'URL de ce dépôt (https://github.com/sdunesme/tp-velov)
+- Cliquer sur Create Workspace
 
 ### Avec conda
 ```bash
