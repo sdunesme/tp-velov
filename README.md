@@ -55,11 +55,13 @@ Pour un démarrage très rapide, vous pouvez utiliser un [Workspace DataCamp](ht
 - Cliquer sur Create Workspace
 
 ### Avec conda
+Les commandes suivantes sont à lancer dans un prompt Anaconda. 
+
 ```bash
 # Installation initiale
-conda create -n tp-velov # Confirmer avec "y"+Enter
+conda create -y -n tp-velov 
 conda activate tp-velov
-conda install -c conda-forge rasterio geopandas jupyterlab # Confirmer avec "y"+Enter
+conda install -y -c conda-forge rasterio geopandas jupyterlab
 
 # Lancement du jupyter-lab
 conda activate tp-velov
