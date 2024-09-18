@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  database:
+    image: postgis/postgis:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: pyvelov
+      POSTGRES_PASSWORD: very_secure_password
+      POSTGRES_DB: pyvelov
