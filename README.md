@@ -45,30 +45,12 @@ Quelques connaissances sur le fonctionnement de shapely sont indispensables pour
 Rasterio permet d'utiliser les librairies GDAL pour ouvrir, lire et écrire des données raster de façon bien plus conviviale que la librairie GDAL elle-même. 
 
 ## Démarrage rapide
-### Avec DataCamp
-Pour un démarrage très rapide, vous pouvez utiliser un [Workspace DataCamp](https://app.datacamp.com/workspace/).
+### Accès aux supports de cours
 
-- Créer un compte sur DataCamp
-- Accéder aux [Workspace DataCamp](https://app.datacamp.com/workspace/)
-- Cliquer sur le lien en haut à droite Import from GitHub
-- Donner un nom au workspace et indiquer l'URL de ce dépôt (https://github.com/sdunesme/tp-velov)
-- Cliquer sur Create Workspace
+Les supports de cours sont accessible via JupyterLite à l'addresse https://sdunesme.github.io/tp-velov.
+Vous pouvez directement développer vos scripts dans cette interface, mais il est recommandé d'installer plutôt un environnement virtuel local sur votre machine.
 
-### Avec conda
-Les commandes suivantes sont à lancer dans un prompt Anaconda. 
-
-```bash
-# Installation initiale
-conda create -y -n tp-velov 
-conda activate tp-velov
-conda install -y -c conda-forge rasterio geopandas jupyterlab
-
-# Lancement du jupyter-lab
-conda activate tp-velov
-jupyter-lab
-```
-
-### Avec pip
+### Installer dans un environnement virtuel avec pip (recommandé)
 #### Windows
 ```powershell
 # Installation initiale
@@ -92,6 +74,20 @@ pip install -r requirements.txt
 
 # Lancement du jupyter-lab
 source env/bin/activate
+jupyter-lab
+```
+
+### Installer dans un environnement virtuel avec conda
+Les commandes suivantes sont à lancer dans un prompt Anaconda. 
+
+```bash
+# Installation initiale
+conda create -y -n tp-velov 
+conda activate tp-velov
+conda install -y -c conda-forge rasterio geopandas jupyterlab
+
+# Lancement du jupyter-lab
+conda activate tp-velov
 jupyter-lab
 ```
 
