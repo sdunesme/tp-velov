@@ -6,6 +6,7 @@ scripts/*.ipynb
 datasets/output/*
 !datasets/output/README.md
 
+.vscode/
 
 *.bundle.*
 lib/

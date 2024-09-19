@@ -23,7 +23,7 @@ Toutes les ressources externes sont autorisées :
 
 Le but de ce TP est de vous apprendre à rechercher vous-même des solutions techniques pour répondre aux attentes d'un cahier des charges. 
 
-Vous pouvez rédiger votre code dans des notebook jupyter si vous en avez l'habitude, mais je vous encourage à plutôt rédiger des fichiers .py bien commentés. Placez tout votre code dans le dossier ```scripts```.
+Vous pouvez utiliser les notebook jupyter pour tester des commandes, des fonctions, etc, mais vous devrez organiser votre code dans des fichiers .py bien commentés. Nous allons structurer notre travail en package composé de modules. Nous écrirons des fonctions pour chaque fonctionnalité, et ajouterons dans le dossier ```tests``` des tests permettant de vérifier que le workflow prévu fonctionne.
 
 ## Principaux packages étudiés
 ### pandas et geopandas
@@ -57,11 +57,7 @@ Vous pouvez directement développer vos scripts dans cette interface, mais il es
 python3.exe -m venv env --prompt tp-velov
 ./env/Scripts/activate
 pip install -U pip
-pip install -r requirements.txt
-
-# Lancement du jupyter-lab
-./env/Scripts/activate
-jupyter-lab
+pip install -e .
 ```
 
 #### Unix
@@ -70,25 +66,7 @@ jupyter-lab
 python3 -m venv env --prompt tp-velov
 source env/bin/activate
 pip install -U pip
-pip install -r requirements.txt
-
-# Lancement du jupyter-lab
-source env/bin/activate
-jupyter-lab
-```
-
-### Installer dans un environnement virtuel avec conda
-Les commandes suivantes sont à lancer dans un prompt Anaconda. 
-
-```bash
-# Installation initiale
-conda create -y -n tp-velov 
-conda activate tp-velov
-conda install -y -c conda-forge rasterio geopandas jupyterlab
-
-# Lancement du jupyter-lab
-conda activate tp-velov
-jupyter-lab
+pip install -e .
 ```
 
 ## Objectif 1 - Données Vélo'V
