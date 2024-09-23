@@ -55,9 +55,8 @@ Vous pouvez directement développer vos scripts dans cette interface, mais il es
 ```powershell
 # Installation initiale
 python3.exe -m venv env --prompt tp-velov
-./env/Scripts/activate
-pip install -U pip
-pip install -e .
+./env/Scripts/pip install -U pip
+./env/Scripts/pip install -e .
 ```
 
 #### Unix
