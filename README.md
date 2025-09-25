@@ -76,7 +76,6 @@ pip install jupyter
 jupyter-lab
 ```
 
-
 ## Objectif 1 - Données Vélo'V
 
 - Récupérer les données ponctuelles des stations Vélo'V avec leurs attributs en direct
