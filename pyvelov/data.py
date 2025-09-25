@@ -49,6 +49,8 @@ def get_station_status() -> pd.DataFrame:
     return donnees_velov
 
 
+### LES FONCTIONS SUIVANTES SONT OPTIONNELLES (ACTIONS SUR UNE BASE DE DONNEES POSTGRESQL)
+
 def update_local_stations(station_information: gpd.GeoDataFrame):
     '''
     Met à jour la base de données locale avec les informations sur les stations fournies
