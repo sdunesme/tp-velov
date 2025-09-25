@@ -30,3 +30,7 @@ plotly>=5,<6
 bqplot
 
 rasterio
+matplotlib
+branca
+folium
+mapclassify
