@@ -50,13 +50,17 @@ Rasterio permet d'utiliser les librairies GDAL pour ouvrir, lire et écrire des 
 Les supports de cours sont accessible via JupyterLite à l'addresse https://sdunesme.github.io/tp-velov.
 Vous pouvez directement développer vos scripts dans cette interface, mais il est recommandé d'installer plutôt un environnement virtuel local sur votre machine.
 
-### Installer dans un environnement virtuel avec pip (recommandé)
+### Installer dans un environnement virtuel local avec pip (recommandé)
 #### Windows
 ```powershell
 # Installation initiale
 python3.exe -m venv env --prompt tp-velov
 ./env/Scripts/pip install -U pip
 ./env/Scripts/pip install -e .
+./env/Scripts/pip install jupyter
+
+# Démarrer le jupyter-lab
+./env/Scripts/jupyter-lab
 ```
 
 #### Unix
@@ -66,7 +70,12 @@ python3 -m venv env --prompt tp-velov
 source env/bin/activate
 pip install -U pip
 pip install -e .
+pip install jupyter
+
+# Démarrer le jupyter-lab
+jupyter-lab
 ```
+
 
 ## Objectif 1 - Données Vélo'V
 
